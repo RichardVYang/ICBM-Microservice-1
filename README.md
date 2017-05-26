@@ -1,2 +1,2 @@
-# Hashtable
-How to create a very simple Hashtable in Java
+# Recursion
+How to use recursion in Java
