@@ -1,2 +1,2 @@
-# Recursion
-How to use recursion in Java
+# Singleton
+Three ways to create singleton in Java
