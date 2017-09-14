@@ -1,0 +1,32 @@
+Data to test using curl or Postman
+
+curl -H "Content-Type: application/json" -X POST -d'{
+"icbmId": "f1196aac-470e-11e6-beb8-9e71128cae77",
+"longitude": -88.144040,
+"latitude": 41.803488, 
+"icbmCode": 1458203977,
+"timestamp": 1468203975}' http://localhost:8080/location/setLocation
+
+For Postman, choose POST and enter http://localhost:8080/location/setLocation as the URL
+Choose Body and than RAW and make sure you choose JSON(application/json)
+Enter the following as raw data:
+
+{
+"icbmId": "f1196aac-470e-11e6-beb8-9e71128cae77",
+"longitude": -88.144040,
+"latitude": 41.803488, 
+"icbmCode": 1458203977,
+"timestamp": 1468203975
+}
+
+Your expected result should be:
+
+{
+    "icbmCode": 1458203977,
+    "icbmId": "f1196aac-470e-11e6-beb8-9e71128cae77",
+    "longitude": -88.14404,
+    "latitude": 41.803488,
+    "timestamp": 1468203975
+}
+
+which is exactly the same payload you submit.
